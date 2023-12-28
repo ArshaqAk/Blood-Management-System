@@ -1,0 +1,8 @@
+.field{
+    border:none !important;
+    border-bottom: ridge 1px rgba(0, 0, 0, 0.256) !important;
+    color: rgba(255, 0, 0, 0.742);
+}
+/* .field::placeholder {
+    color: rgb(0, 0, 0) !important;
+  } */

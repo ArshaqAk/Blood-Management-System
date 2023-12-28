@@ -1,0 +1,72 @@
+.main-home{
+    min-height: 90vh;
+}
+.animated-text{
+    font-size: 38px;
+    font-weight: 800;
+    min-width: 280px;
+}
+.animated-text span{
+    position: relative;
+}
+.animated-text span::before{
+    content: "Blood Bank";
+    color: rgba(216, 6, 6, 0.826);
+    animation: words 20s infinite;
+}
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #fff;
+    border-left: 2px solid  rgba(216, 6, 6, 0.826);
+    right: -8px;
+    animation: cursor .8s infinite, typing 12s steps(8) infinite;
+}
+@keyframes cursor{
+    to{
+    
+        border-left: 2px solid rgba(216, 6, 6, 0.826) ;
+    }
+}
+@keyframes words{
+    0%,100%{
+        content:"Blood Bank";
+    }
+}
+@keyframes typing{
+    10%,100%{
+        width:0;
+    }
+    0%,100%{
+        width: calc(100% + 8px);
+    }
+}
+
+.animation{
+    width: 400px;
+    height: 150px;
+
+}
+.quote-box{
+    display: flex;
+    justify-content: center;
+}
+.home-image{
+    width: 350px;
+    height: 370px;
+}
+
+
+
+@media only screen and (max-width: 400px) {
+
+    .home-image{
+      width: 200px;
+      height: 170px;  
+    }
+    .animated-text{
+        overflow: hidden;
+    }
+  }
